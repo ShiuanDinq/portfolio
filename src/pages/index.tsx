@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,110 +13,73 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main>
+        <div className="parallax">
+          <div id="group1" className="parallax__group">
+            <div className="parallax__layer parallax__layer--base">
+              <div className="title">Pure CSS Parallax</div>
+            </div>
           </div>
-        </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+          <div id="group2" className="parallax__group">
+            <div className="parallax__layer parallax__layer--base">
+              <div className="title">
+                This parallax example is achieved using only CSS.
+              </div>
+            </div>
+            <div className="parallax__layer parallax__layer--back">
+              <div className="title">No JavaScript Required!</div>
+            </div>
           </div>
-        </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+          <div id="group3" className="parallax__group">
+            <div className="parallax__layer parallax__layer--fore">
+              <div className="title">After Layer.</div>
+            </div>
+            <div className="parallax__layer parallax__layer--base">
+              <div className="title">You Can Have Layer...</div>
+            </div>
+          </div>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+          <div id="group4" className="parallax__group">
+            <div className="parallax__layer parallax__layer--base">
+              <div className="title">Still More.</div>
+            </div>
+            <div className="parallax__layer parallax__layer--back">
+              <div className="title">And More.</div>
+            </div>
+            <div className="parallax__layer parallax__layer--deep">
+              <div className="title">More Layers.</div>
+            </div>
+          </div>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
+          <div id="group5" className="parallax__group">
+            <div className="parallax__layer parallax__layer--fore">
+              <div className="title">Edmund Hang</div>
+            </div>
+            <div className="parallax__layer parallax__layer--base">
+              {/* <div className="title">Scrolling at Different Speeds</div> */}
+            </div>
+          </div>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          <div id="group6" className="parallax__group">
+            <div className="parallax__layer parallax__layer--back">
+              <div className="title">
+                To Achieve a Complete Parallax Effect.
+              </div>
+            </div>
+            <div className="parallax__layer parallax__layer--base">
+              <div className="title">Using ONLY CSS!</div>
+            </div>
+          </div>
+
+          <div id="group7" className="parallax__group">
+            <div className="parallax__layer parallax__layer--base">
+              <div className="title">Hope You Enjoyed It!</div>
+            </div>
+          </div>
         </div>
       </main>
     </>
-  )
+  );
 }
